@@ -1,0 +1,7 @@
+{
+  "name": "garagePlugAssignment",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
