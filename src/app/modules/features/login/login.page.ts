@@ -29,7 +29,11 @@ export class LoginPage implements OnInit {
   }
 
   onSubmit() {
-    this.store.dispatch(login({ username: "admin@gmail.com", password: "password" }));
+    const email = this.loginForm.value.email;
+    const password = this.loginForm.value.password
+    if(email && password){
+      this.store.dispatch(login({ username: email, password: password }))
+    }
 
     // this.firebaseService.login( "rachayya.rk@gmail.com", "TestApp@123").then(res =>{
     // });

@@ -35,7 +35,6 @@ export class FirebaseService {
             break;
           default:
             this.loadingService.stopLoading();
-            alert('something went wrong');
         }
       });
   }
