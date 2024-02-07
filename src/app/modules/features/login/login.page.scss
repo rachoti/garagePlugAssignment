@@ -1,0 +1,12 @@
+.gooogle-btn-container {
+    margin-top: 30px;
+    .google-btn{
+        color: black;
+        border-radius: 40px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        ion-img {
+            width: 20px;
+            margin-right: 15px;
+        }
+    }
+}

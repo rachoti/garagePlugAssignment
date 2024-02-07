@@ -1,0 +1,27 @@
+<ion-row class="header-container">
+  <ion-col class="ion-text-start">
+      <ion-label>Slider</ion-label>
+  </ion-col>
+  <ion-col class="ion-text-end">
+      <ion-label>Recent</ion-label>
+  </ion-col>
+</ion-row>
+
+
+<ion-content>
+  <swiper-container>
+      <swiper-slide *ngFor="let post of data">
+        <ion-grid>
+          <ion-row class="slide-header-container">
+            <ion-label class="slide-1-header">{{post.title}}</ion-label>
+          </ion-row>
+          <ion-row class="car-illustration">
+            <!-- <ion-img [src]="slide.imgSrc"></ion-img> -->
+          </ion-row>
+          <ion-row>
+            <ion-text> {{post.body}} </ion-text>
+          </ion-row>
+        </ion-grid>
+      </swiper-slide>
+    </swiper-container>
+</ion-content>

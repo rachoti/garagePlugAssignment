@@ -1,0 +1,21 @@
+{
+   "slides": [
+        {
+            "header": "Welcome to GaragePlug",
+            "imgSrc": "https://assets-global.website-files.com/64edad536991c2ee9697410d/64edad536991c2ee96974176_auto%20repair%20%26%20detailing.svg",
+            "desc": "Rev up your automotive passion with GaragePlug, your ultimate hub for tools, parts, and expert advice."
+        },
+        {
+            "header": "Explore Our Products",
+            "imgSrc": "https://assets-global.website-files.com/64edad536991c2ee9697410d/652e170f82f8243bbfeb2c42_workshop%20dashboard.svg",
+            "desc": "Discover a treasure trove of top-notch tools, genuine parts, and stylish accessories to fuel your automotive dreams."
+        },
+        {
+            "header": "Join Our Community",
+            "imgSrc": "https://assets-global.website-files.com/64edad536991c2ee9697410d/64edad536991c2ee969741cc_work-chat-1.jpeg",
+            "desc": "Connect with fellow enthusiasts, share knowledge, and embark on exciting automotive adventures together in the GaragePlug community."
+        }
+    ],
+    "login":"Login with Google",
+    "path":"login"
+}

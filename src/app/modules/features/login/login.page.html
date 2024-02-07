@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button type="submit" [disabled]="!loginForm.valid" color="danger">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="gooogle-btn-container">
+      <ion-col class="ion-text-center">
+        <ion-button color="white" class="google-btn" (click)="signInWithPopUp()">
+          <ion-img
+          src="assets/images/google-logo.png"
+          alt="The Wisconsin State Capitol building in Madison, WI at night"
+        ></ion-img>
+        Continue with Google</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

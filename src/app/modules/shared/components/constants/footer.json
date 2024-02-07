@@ -1,0 +1,24 @@
+{
+    "tabs": [
+        {
+            "name": "View Post",
+            "path": "post",
+            "iconName": "paper-plane-outline"
+        },
+        {
+            "name": "Comments",
+            "path": "comments",
+            "iconName": "radio"
+        },
+        {
+            "name": "Profile",
+            "path": "profile",
+            "iconName": "person-outline"
+        },
+        {
+            "name": "More",
+            "path": "more",
+            "iconName": "menu-outline"
+        }
+    ]
+}

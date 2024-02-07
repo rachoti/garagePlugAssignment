@@ -1,0 +1,24 @@
+<ion-content>
+  <swiper-container>
+    <swiper-slide *ngFor="let slide of pageTxt.slides">
+      <ion-grid>
+        <ion-row class="slide-header-container">
+          <ion-label class="slide-1-header">{{slide.header}}</ion-label>
+        </ion-row>
+        <ion-row class="car-illustration">
+          <ion-img [src]="slide.imgSrc"></ion-img>
+        </ion-row>
+        <ion-row>
+          <ion-text> {{slide.desc}} </ion-text>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+  </swiper-container>
+  <ion-row class="btn-container">
+    <ion-col class="ion-text-center">
+      <ion-button (click)="redirectToLoginPage(pageTxt.path)"
+        >{{pageTxt.login}}</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-content>

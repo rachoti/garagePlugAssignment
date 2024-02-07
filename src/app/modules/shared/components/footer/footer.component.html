@@ -1,0 +1,10 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ng-container *ngFor="let tab of pageTxt.tabs">
+      <ion-tab-button [tab]="tab.path">
+        <ion-icon [name]="tab.iconName"></ion-icon>
+        {{tab.name}}
+      </ion-tab-button>
+    </ng-container>
+  </ion-tab-bar>
+</ion-tabs>
