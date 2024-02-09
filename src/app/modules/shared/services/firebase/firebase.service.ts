@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Auth, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from '@angular/fire/auth';
 import { Router } from '@angular/router';
-import { Observable, delay, from, of } from 'rxjs';
+import { Observable, from } from 'rxjs';
 import { LoadingService } from '../loading/loading.service';
 
 @Injectable({
