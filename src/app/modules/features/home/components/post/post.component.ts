@@ -5,6 +5,7 @@ import { ModalComponent } from 'src/app/modules/shared/components/modal/modal.co
 import { BaseService } from 'src/app/modules/shared/services/base/base.service';
 import { UtilityService } from 'src/app/modules/shared/services/utility/utility.service';
 import { Endpoints } from '../comments/constants/endpoints';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-post',
@@ -22,7 +23,8 @@ export class PostComponent {
   constructor(
     private baseService: BaseService,
     private modalController: ModalController,
-    private utilityService: UtilityService
+    private utilityService: UtilityService,
+    private store: Store<{auth: {username: string, password: string}}>
   ) {
     this.endPoints = this.utilityService.appendDomainToEndpoints(Endpoints);
   }
@@ -34,6 +36,9 @@ export class PostComponent {
         this.data = res;
         this.datasource = this.data.slice(0, this.pageSize);
       });
+      this.store.select('auth').subscribe(res=>{
+        console.log("Login Result",res);
+      })
   }
 
   pageChangeEvent(event) {

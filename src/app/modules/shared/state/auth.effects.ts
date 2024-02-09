@@ -19,8 +19,8 @@ export class AuthEffects {
       ofType(AuthActions.login),
       mergeMap(action =>
         this.firebaseService.login(action.username, action.password).pipe(
-          map(user => AuthActions.loginSuccess({ user })),
-          catchError(error => of(AuthActions.loginFailure({ error })))
+          map(user => AuthActions.loginSuccess(user)),
+          catchError(error => of(AuthActions.loginFailure(error)))
         )
       )
     )

@@ -22,10 +22,11 @@ export class LoginPage implements OnInit {
   });  
   constructor(
     private firebaseService: FirebaseService,
-    private store: Store<AppState>
+    private store: Store<{username: string, password:string}>
   ) { }
 
   ngOnInit() { 
+    
   }
 
   onSubmit() {

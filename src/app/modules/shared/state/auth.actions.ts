@@ -1,5 +1,6 @@
 // auth.actions.ts
 import { createAction, props } from '@ngrx/store';
+import { AuthState } from './auth.reducer';
 
 export const login = createAction(
   '[Auth] Login',
@@ -8,12 +9,12 @@ export const login = createAction(
 
 export const loginSuccess = createAction(
   '[Auth] Login Success',
-  props<{ user: any }>()
+  props<AuthState>()
 );
 
 export const loginFailure = createAction(
   '[Auth] Login Failure',
-  props<{ error: any }>()
+  props<AuthState>()
 );
 
 export const logout = createAction('[Auth] Logout');

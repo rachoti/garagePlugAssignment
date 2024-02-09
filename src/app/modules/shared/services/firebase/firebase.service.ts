@@ -39,7 +39,7 @@ export class FirebaseService {
       });
   }
 
-  login(email: string, password: string): Observable<any> {
+  login(email: string, password: string): Observable<any> { 
     return from(this.loginWithEmail(email, password));
   }
 
